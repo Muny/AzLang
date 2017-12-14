@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzLang", "AzLang\AzLang.csproj", "{17CD15FF-F064-4587-926E-9215B7903E4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutedHTTPInterpreter.cs", "RoutedHTTPInterpreter.cs\RoutedHTTPInterpreter.cs.csproj", "{A2CBB75D-72E3-4DAD-AD40-5E802835892A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Extension", "Test Extension\Test Extension.csproj", "{A14020B7-DDE8-4489-8339-528F35A3F7E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17CD15FF-F064-4587-926E-9215B7903E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CD15FF-F064-4587-926E-9215B7903E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CD15FF-F064-4587-926E-9215B7903E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CD15FF-F064-4587-926E-9215B7903E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CBB75D-72E3-4DAD-AD40-5E802835892A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CBB75D-72E3-4DAD-AD40-5E802835892A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CBB75D-72E3-4DAD-AD40-5E802835892A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CBB75D-72E3-4DAD-AD40-5E802835892A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14020B7-DDE8-4489-8339-528F35A3F7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14020B7-DDE8-4489-8339-528F35A3F7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14020B7-DDE8-4489-8339-528F35A3F7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14020B7-DDE8-4489-8339-528F35A3F7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
