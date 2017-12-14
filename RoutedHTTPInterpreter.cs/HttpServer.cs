@@ -40,8 +40,7 @@ namespace RoutedHTTPInterpreter
             }
         }
 
-        public void Dispose()
-        { Stop(); }
+        public void Dispose() => Stop();
 
         public void Stop()
         {

@@ -11,9 +11,6 @@ namespace RoutedHTTPInterpreter.cs.Types
     {
         HttpListenerContext ListenerContext;
 
-        public RequestContext(HttpListenerContext context)
-        {
-            this.ListenerContext = context;
-        }
+        public RequestContext(HttpListenerContext context) => this.ListenerContext = context;
     }
 }

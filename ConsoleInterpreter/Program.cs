@@ -17,7 +17,7 @@ namespace ConsoleInterpreter
                 {
                     Console.WriteLine("[DEBUG] " + msg);
                 },
-                HandleDoneExecuting = () =>
+                HandleDoneExecuting =>
                 {
 
                 },

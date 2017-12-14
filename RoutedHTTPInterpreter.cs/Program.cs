@@ -591,34 +591,10 @@ namespace RoutedHTTPInterpreter
 
             switch (extension)
             {
-                case "archive":
-                    result = "archive";
-                break;
-
                 case "mp3":
                 case "m4a":
                 case "flac":
                     result = "audio";
-                break;
-
-                case "authors":
-                    result = "authors";
-                break;
-
-                case "bin":
-                    result = "bin";
-                break;
-
-                case "bmp":
-                    result = "bmp";
-                break;
-
-                case "c":
-                    result = "c";
-                break;
-
-                case "calc":
-                    result = "calc";
                 break;
 
                 case "iso":
@@ -626,77 +602,9 @@ namespace RoutedHTTPInterpreter
                     result = "cd";
                 break;
 
-                case "copying":
-                    result = "copying";
-                break;
-
-                case "cpp":
-                    result = "cpp";
-                break;
-
-                case "css":
-                    result = "css";
-                break;
-
-                case "deb":
-                    result = "deb";
-                break;
-
-                case "diff":
-                    result = "diff";
-                break;
-
                 case "doc":
                 case "docx":
                     result = "doc";
-                break;
-
-                case "draw":
-                    result = "draw";
-                break;
-
-                case "eps":
-                    result = "eps";
-                break;
-
-                case "exe":
-                    result = "exe";
-                break;
-
-                case "gif":
-                    result = "gif";
-                break;
-
-                case "gzip":
-                    result = "gzip";
-                break;
-
-                case "h":
-                    result = "h";
-                break;
-                
-                case "hpp":
-                    result = "hpp";
-                break;
-
-                case "html":
-                    result = "html";
-                break;
-
-                case "ico":
-                    result = "ico";
-                break;
-
-                //case "image":
-
-                //break;
-
-                case "install":
-                    result = "install";
-                break;
-
-                case "java":
-                    result = "java";
                 break;
 
                 case "jpg":
@@ -704,84 +612,8 @@ namespace RoutedHTTPInterpreter
                     result = "jpg";
                 break;
 
-                case "js":
-                    result = "js";
-                break;
-
                 case "json":
                     result = "js";
-                break;
-
-                case "log":
-                    result = "log";
-                break;
-
-                case "makefile":
-                    result = "makefile";
-                break;
-
-                case "markdown":
-                    result = "markdown";
-                break;
-
-                case "package":
-                    result = "package";
-                break;
-
-                case "pdf":
-                    result = "pdf";
-                break;
-
-                case "php":
-                    result = "php";
-                break;
-
-                case "playlist":
-                    result = "playlist";
-                break;
-
-                case "png":
-                    result = "png";
-                break;
-
-                case "pres":
-                    result = "pres";
-                break;
-
-                case "ps":
-                    result = "ps";
-                break;
-
-                case "psd":
-                    result = "psd";
-                break;
-
-                case "py":
-                    result = "py";
-                break;
-
-                case "rar":
-                    result = "rar";
-                break;
-
-                case "rb":
-                    result = "rb";
-                break;
-
-                case "readme":
-                    result = "readme";
-                break;
-
-                case "rpm":
-                    result = "rpm";
-                break;
-
-                case "rss":
-                    result = "rss";
-                break;
-
-                case "rtf":
-                    result = "rtf";
                 break;
 
                 case "script":
@@ -790,37 +622,9 @@ namespace RoutedHTTPInterpreter
                     result = "script";
                 break;
 
-                case "source":
-                    result = "source";
-                break;
-
-                case "sql":
-                    result = "sql";
-                break;
-
-                case "tar":
-                    result = "tar";
-                break;
-
-                case "tex":
-                    result = "tex";
-                break;
-
                 case "text":
                 case "txt":
                     result = "text";
-                break;
-                
-                case "tiff":
-                    result = "tiff";
-                break;
-
-                case "unknown":
-                    result = "unknown";
-                break;
-
-                case "vcal":
-                    result = "vcal";
                 break;
 
                 case "mp4":
@@ -830,16 +634,9 @@ namespace RoutedHTTPInterpreter
                     result = "video";
                 break;
 
-                case "xml":
-                    result = "xml";
+                default:
+                    result = extension;
                 break;
-
-                case "zip":
-                    result = "zip";
-                break;
-
-
-
             }
 
             return result;
@@ -871,15 +668,15 @@ namespace RoutedHTTPInterpreter
                     {
                         context.Response.OutputStream.Write(bytes, 0, bytes.Length);
                     }
-                    catch
+                    catch (System.Exception e)
                     {
-
+                        Console.WriteLine("Exception: " + e.ToString());
                     }
                 }
             }
-            catch
+            catch (System.Exception e)
             {
-
+                Console.WriteLine("Exception: " + e.ToString());
             }
         }
     }

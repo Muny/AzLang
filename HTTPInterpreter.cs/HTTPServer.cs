@@ -25,7 +25,7 @@ namespace HTTPInterpreter
         public Hashtable httpHeaders = new Hashtable();
 
 
-        private static int MAX_POST_SIZE = 10 * 1024 * 1024; // 10MB
+        private static int MAX_POST_SIZE = 10 * (1024 * 1024); // 10MB
 
         public HttpProcessor(TcpClient s, HttpServer srv)
         {
@@ -81,9 +81,9 @@ namespace HTTPInterpreter
                 inputStream = null; outputStream = null; // bs = null;            
                 socket.Close();
             }
-            catch
+            catch (Exception e)
             {
-
+                Console.WriteLine("Exception: " + e.ToString());
             }
         }
 
@@ -132,12 +132,10 @@ namespace HTTPInterpreter
             }
         }
 
-        public void handleGETRequest()
-        {
-            srv.handleGETRequest(this);
-        }
+        public void handleGETRequest() => srv.handleGETRequest(this);
 
         private const int BUF_SIZE = 4096;
+
         public void handlePOSTRequest()
         {
             // this post data processing just reads everything into a memory stream.
@@ -169,9 +167,7 @@ namespace HTTPInterpreter
                     if (numread == 0)
                     {
                         if (to_read == 0)
-                        {
                             break;
-                        }
                         else
                         {
                             throw new Exception("client disconnected during post");
@@ -210,10 +206,7 @@ namespace HTTPInterpreter
         TcpListener listener;
         bool is_active = true;
 
-        public HttpServer(int port)
-        {
-            this.port = port;
-        }
+        public HttpServer(int port) => this.port = port;
 
         public void listen()
         {
@@ -241,10 +234,8 @@ namespace HTTPInterpreter
     public class MyHttpServer : HttpServer
     {
 
-        public MyHttpServer(int port)
-            : base(port)
-        {
-        }
+        public MyHttpServer(int port) : base(port) {}
+
         public override void handleGETRequest(HttpProcessor p)
         {
             AzLang.AzBaseInterpreter Interpreter = null;
@@ -255,7 +246,7 @@ namespace HTTPInterpreter
                 {
                     Console.WriteLine("[DEBUG] " + msg);
                 },
-                HandleDoneExecuting = () =>
+                HandleDoneExecuting =>
                 {
 
                 },
