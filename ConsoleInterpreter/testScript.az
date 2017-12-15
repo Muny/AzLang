@@ -2,6 +2,18 @@
 
 <$az
 
-write(num);
+func test(param1) {
+    func within(param) {
+        write(param + 'lol' + param1);
+    }
+
+    return within;
+}
+
+var lol = test('wtf');
+
+var res = lol('hmm');
+
+write(res);
 
 az$>

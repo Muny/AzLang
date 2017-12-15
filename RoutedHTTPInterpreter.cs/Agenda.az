@@ -116,6 +116,14 @@ func login_handler(context) {
 	write(loginSuccess);
 }
 
+func logout_handler(context) {
+	header('Set-Cookie', '_azsess=deleted; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT');
+
+	header('Location', '/');
+
+	status_code(302);
+}
+
 func dash_handler(context) {
 
 	var curr_sess = get_current_session();
@@ -290,6 +298,8 @@ load_users();
 httproute_get('/', index_handler);
 
 httproute_get('/api/login', login_handler);
+
+httproute_get('/api/logout', logout_handler);
 
 httproute_get('/api/addevent', addevent_handler);
 
