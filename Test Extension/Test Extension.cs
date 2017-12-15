@@ -31,5 +31,10 @@ namespace Test_Extension
         {
 
         }
+
+        public void SetOwner(object owner)
+        {
+            
+        }
     }
 }

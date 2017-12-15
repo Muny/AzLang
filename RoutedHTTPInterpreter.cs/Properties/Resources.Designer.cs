@@ -10,6 +10,8 @@
 
 namespace RoutedHTTPInterpreter.cs.Properties {
     using System;
+    using System.IO;
+    using System.Reflection;
     
     
     /// <summary>
@@ -27,6 +29,8 @@ namespace RoutedHTTPInterpreter.cs.Properties {
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
+
+        
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
@@ -65,7 +69,11 @@ namespace RoutedHTTPInterpreter.cs.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _default {
             get {
-                object obj = ResourceManager.GetObject("_default", resourceCulture);
+                
+
+               
+
+                object obj = ResourceManager.GetObject("default", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

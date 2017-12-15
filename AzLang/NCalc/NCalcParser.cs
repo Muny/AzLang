@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g 2009-11-11 17:56:42
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g 2009-11-11 17:56:42
 
 
 using System.Text;
@@ -150,7 +150,7 @@ public class NCalcParser : Parser
     }
 
     override public string GrammarFileName {
-		get { return "C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g"; }
+		get { return "C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g"; }
     }
 
 
@@ -221,7 +221,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "ncalcExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:77:1: ncalcExpression returns [LogicalExpression value] : logicalExpression EOF ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:77:1: ncalcExpression returns [LogicalExpression value] : logicalExpression EOF ;
     public NCalcParser.ncalcExpression_return ncalcExpression() // throws RecognitionException [1]
     {   
         NCalcParser.ncalcExpression_return retval = new NCalcParser.ncalcExpression_return();
@@ -232,13 +232,10 @@ public class NCalcParser : Parser
         IToken EOF2 = null;
         NCalcParser.logicalExpression_return logicalExpression1 = null;
 
-
-        CommonTree EOF2_tree=null;
-
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:78:2: ( logicalExpression EOF )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:78:4: logicalExpression EOF
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:78:2: ( logicalExpression EOF )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:78:4: logicalExpression EOF
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -284,7 +281,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "logicalExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:81:1: logicalExpression returns [LogicalExpression value] : left= conditionalExpression ( '?' middle= conditionalExpression ':' right= conditionalExpression )? ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:81:1: logicalExpression returns [LogicalExpression value] : left= conditionalExpression ( '?' middle= conditionalExpression ':' right= conditionalExpression )? ;
     public NCalcParser.logicalExpression_return logicalExpression() // throws RecognitionException [1]
     {   
         NCalcParser.logicalExpression_return retval = new NCalcParser.logicalExpression_return();
@@ -306,8 +303,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:82:2: (left= conditionalExpression ( '?' middle= conditionalExpression ':' right= conditionalExpression )? )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:82:4: left= conditionalExpression ( '?' middle= conditionalExpression ':' right= conditionalExpression )?
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:82:2: (left= conditionalExpression ( '?' middle= conditionalExpression ':' right= conditionalExpression )? )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:82:4: left= conditionalExpression ( '?' middle= conditionalExpression ':' right= conditionalExpression )?
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -317,7 +314,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:82:57: ( '?' middle= conditionalExpression ':' right= conditionalExpression )?
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:82:57: ( '?' middle= conditionalExpression ':' right= conditionalExpression )?
             	int alt1 = 2;
             	int LA1_0 = input.LA(1);
 
@@ -328,7 +325,7 @@ public class NCalcParser : Parser
             	switch (alt1) 
             	{
             	    case 1 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:82:59: '?' middle= conditionalExpression ':' right= conditionalExpression
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:82:59: '?' middle= conditionalExpression ':' right= conditionalExpression
             	        {
             	        	char_literal3=(IToken)Match(input,19,FOLLOW_19_in_logicalExpression84); 
             	        		char_literal3_tree = (CommonTree)adaptor.Create(char_literal3);
@@ -390,7 +387,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "conditionalExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:85:1: conditionalExpression returns [LogicalExpression value] : left= booleanAndExpression ( ( '||' | 'or' ) right= conditionalExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:85:1: conditionalExpression returns [LogicalExpression value] : left= booleanAndExpression ( ( '||' | 'or' ) right= conditionalExpression )* ;
     public NCalcParser.conditionalExpression_return conditionalExpression() // throws RecognitionException [1]
     {   
         NCalcParser.conditionalExpression_return retval = new NCalcParser.conditionalExpression_return();
@@ -404,15 +401,12 @@ public class NCalcParser : Parser
         NCalcParser.conditionalExpression_return right = null;
 
 
-        CommonTree set5_tree=null;
-
-
         BinaryExpressionType type = BinaryExpressionType.Unknown;
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:89:2: (left= booleanAndExpression ( ( '||' | 'or' ) right= conditionalExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:89:4: left= booleanAndExpression ( ( '||' | 'or' ) right= conditionalExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:89:2: (left= booleanAndExpression ( ( '||' | 'or' ) right= conditionalExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:89:4: left= booleanAndExpression ( ( '||' | 'or' ) right= conditionalExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -422,7 +416,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:89:56: ( ( '||' | 'or' ) right= conditionalExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:89:56: ( ( '||' | 'or' ) right= conditionalExpression )*
             	do 
             	{
             	    int alt2 = 2;
@@ -437,7 +431,7 @@ public class NCalcParser : Parser
             	    switch (alt2) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:90:4: ( '||' | 'or' ) right= conditionalExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:90:4: ( '||' | 'or' ) right= conditionalExpression
             			    {
             			    	set5 = (IToken)input.LT(1);
             			    	if ( (input.LA(1) >= 21 && input.LA(1) <= 22) ) 
@@ -506,7 +500,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "booleanAndExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:95:1: booleanAndExpression returns [LogicalExpression value] : left= bitwiseOrExpression ( ( '&&' | 'and' ) right= bitwiseOrExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:95:1: booleanAndExpression returns [LogicalExpression value] : left= bitwiseOrExpression ( ( '&&' | 'and' ) right= bitwiseOrExpression )* ;
     public NCalcParser.booleanAndExpression_return booleanAndExpression() // throws RecognitionException [1]
     {   
         NCalcParser.booleanAndExpression_return retval = new NCalcParser.booleanAndExpression_return();
@@ -519,16 +513,12 @@ public class NCalcParser : Parser
 
         NCalcParser.bitwiseOrExpression_return right = null;
 
-
-        CommonTree set6_tree=null;
-
-
         BinaryExpressionType type = BinaryExpressionType.Unknown;
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:99:2: (left= bitwiseOrExpression ( ( '&&' | 'and' ) right= bitwiseOrExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:99:4: left= bitwiseOrExpression ( ( '&&' | 'and' ) right= bitwiseOrExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:99:2: (left= bitwiseOrExpression ( ( '&&' | 'and' ) right= bitwiseOrExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:99:4: left= bitwiseOrExpression ( ( '&&' | 'and' ) right= bitwiseOrExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -538,7 +528,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:99:55: ( ( '&&' | 'and' ) right= bitwiseOrExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:99:55: ( ( '&&' | 'and' ) right= bitwiseOrExpression )*
             	do 
             	{
             	    int alt3 = 2;
@@ -553,7 +543,7 @@ public class NCalcParser : Parser
             	    switch (alt3) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:100:4: ( '&&' | 'and' ) right= bitwiseOrExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:100:4: ( '&&' | 'and' ) right= bitwiseOrExpression
             			    {
             			    	set6 = (IToken)input.LT(1);
             			    	if ( (input.LA(1) >= 23 && input.LA(1) <= 24) ) 
@@ -622,7 +612,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "bitwiseOrExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:105:1: bitwiseOrExpression returns [LogicalExpression value] : left= bitwiseXOrExpression ( '|' right= bitwiseOrExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:105:1: bitwiseOrExpression returns [LogicalExpression value] : left= bitwiseXOrExpression ( '|' right= bitwiseOrExpression )* ;
     public NCalcParser.bitwiseOrExpression_return bitwiseOrExpression() // throws RecognitionException [1]
     {   
         NCalcParser.bitwiseOrExpression_return retval = new NCalcParser.bitwiseOrExpression_return();
@@ -643,8 +633,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:109:2: (left= bitwiseXOrExpression ( '|' right= bitwiseOrExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:109:4: left= bitwiseXOrExpression ( '|' right= bitwiseOrExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:109:2: (left= bitwiseXOrExpression ( '|' right= bitwiseOrExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:109:4: left= bitwiseXOrExpression ( '|' right= bitwiseOrExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -654,7 +644,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:109:56: ( '|' right= bitwiseOrExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:109:56: ( '|' right= bitwiseOrExpression )*
             	do 
             	{
             	    int alt4 = 2;
@@ -669,7 +659,7 @@ public class NCalcParser : Parser
             	    switch (alt4) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:110:4: '|' right= bitwiseOrExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:110:4: '|' right= bitwiseOrExpression
             			    {
             			    	char_literal7=(IToken)Match(input,25,FOLLOW_25_in_bitwiseOrExpression246); 
             			    		char_literal7_tree = (CommonTree)adaptor.Create(char_literal7);
@@ -729,7 +719,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "bitwiseXOrExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:115:1: bitwiseXOrExpression returns [LogicalExpression value] : left= bitwiseAndExpression ( '^' right= bitwiseAndExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:115:1: bitwiseXOrExpression returns [LogicalExpression value] : left= bitwiseAndExpression ( '^' right= bitwiseAndExpression )* ;
     public NCalcParser.bitwiseXOrExpression_return bitwiseXOrExpression() // throws RecognitionException [1]
     {   
         NCalcParser.bitwiseXOrExpression_return retval = new NCalcParser.bitwiseXOrExpression_return();
@@ -750,8 +740,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:119:2: (left= bitwiseAndExpression ( '^' right= bitwiseAndExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:119:4: left= bitwiseAndExpression ( '^' right= bitwiseAndExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:119:2: (left= bitwiseAndExpression ( '^' right= bitwiseAndExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:119:4: left= bitwiseAndExpression ( '^' right= bitwiseAndExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -761,7 +751,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:119:56: ( '^' right= bitwiseAndExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:119:56: ( '^' right= bitwiseAndExpression )*
             	do 
             	{
             	    int alt5 = 2;
@@ -776,7 +766,7 @@ public class NCalcParser : Parser
             	    switch (alt5) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:120:4: '^' right= bitwiseAndExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:120:4: '^' right= bitwiseAndExpression
             			    {
             			    	char_literal8=(IToken)Match(input,26,FOLLOW_26_in_bitwiseXOrExpression299); 
             			    		char_literal8_tree = (CommonTree)adaptor.Create(char_literal8);
@@ -836,7 +826,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "bitwiseAndExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:125:1: bitwiseAndExpression returns [LogicalExpression value] : left= equalityExpression ( '&' right= equalityExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:125:1: bitwiseAndExpression returns [LogicalExpression value] : left= equalityExpression ( '&' right= equalityExpression )* ;
     public NCalcParser.bitwiseAndExpression_return bitwiseAndExpression() // throws RecognitionException [1]
     {   
         NCalcParser.bitwiseAndExpression_return retval = new NCalcParser.bitwiseAndExpression_return();
@@ -857,8 +847,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:129:2: (left= equalityExpression ( '&' right= equalityExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:129:4: left= equalityExpression ( '&' right= equalityExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:129:2: (left= equalityExpression ( '&' right= equalityExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:129:4: left= equalityExpression ( '&' right= equalityExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -868,7 +858,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:129:54: ( '&' right= equalityExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:129:54: ( '&' right= equalityExpression )*
             	do 
             	{
             	    int alt6 = 2;
@@ -883,7 +873,7 @@ public class NCalcParser : Parser
             	    switch (alt6) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:130:4: '&' right= equalityExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:130:4: '&' right= equalityExpression
             			    {
             			    	char_literal9=(IToken)Match(input,27,FOLLOW_27_in_bitwiseAndExpression350); 
             			    		char_literal9_tree = (CommonTree)adaptor.Create(char_literal9);
@@ -943,7 +933,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "equalityExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:135:1: equalityExpression returns [LogicalExpression value] : left= relationalExpression ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:135:1: equalityExpression returns [LogicalExpression value] : left= relationalExpression ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )* ;
     public NCalcParser.equalityExpression_return equalityExpression() // throws RecognitionException [1]
     {   
         NCalcParser.equalityExpression_return retval = new NCalcParser.equalityExpression_return();
@@ -958,16 +948,12 @@ public class NCalcParser : Parser
         NCalcParser.relationalExpression_return right = null;
 
 
-        CommonTree set10_tree=null;
-        CommonTree set11_tree=null;
-
-
         BinaryExpressionType type = BinaryExpressionType.Unknown;
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:139:2: (left= relationalExpression ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:139:4: left= relationalExpression ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:139:2: (left= relationalExpression ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:139:4: left= relationalExpression ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -977,7 +963,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:139:56: ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:139:56: ( ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression )*
             	do 
             	{
             	    int alt8 = 2;
@@ -992,9 +978,9 @@ public class NCalcParser : Parser
             	    switch (alt8) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:140:4: ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:140:4: ( ( '==' | '=' ) | ( '!=' | '<>' ) ) right= relationalExpression
             			    {
-            			    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:140:4: ( ( '==' | '=' ) | ( '!=' | '<>' ) )
+            			    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:140:4: ( ( '==' | '=' ) | ( '!=' | '<>' ) )
             			    	int alt7 = 2;
             			    	int LA7_0 = input.LA(1);
 
@@ -1016,7 +1002,7 @@ public class NCalcParser : Parser
             			    	switch (alt7) 
             			    	{
             			    	    case 1 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:140:6: ( '==' | '=' )
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:140:6: ( '==' | '=' )
             			    	        {
             			    	        	set10 = (IToken)input.LT(1);
             			    	        	if ( (input.LA(1) >= 28 && input.LA(1) <= 29) ) 
@@ -1036,7 +1022,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 2 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:141:6: ( '!=' | '<>' )
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:141:6: ( '!=' | '<>' )
             			    	        {
             			    	        	set11 = (IToken)input.LT(1);
             			    	        	if ( (input.LA(1) >= 30 && input.LA(1) <= 31) ) 
@@ -1111,7 +1097,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "relationalExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:146:1: relationalExpression returns [LogicalExpression value] : left= shiftExpression ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:146:1: relationalExpression returns [LogicalExpression value] : left= shiftExpression ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )* ;
     public NCalcParser.relationalExpression_return relationalExpression() // throws RecognitionException [1]
     {   
         NCalcParser.relationalExpression_return retval = new NCalcParser.relationalExpression_return();
@@ -1138,8 +1124,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:150:2: (left= shiftExpression ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:150:4: left= shiftExpression ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:150:2: (left= shiftExpression ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:150:4: left= shiftExpression ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -1149,7 +1135,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:150:51: ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:150:51: ( ( '<' | '<=' | '>' | '>=' ) right= shiftExpression )*
             	do 
             	{
             	    int alt10 = 2;
@@ -1164,9 +1150,9 @@ public class NCalcParser : Parser
             	    switch (alt10) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:151:4: ( '<' | '<=' | '>' | '>=' ) right= shiftExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:151:4: ( '<' | '<=' | '>' | '>=' ) right= shiftExpression
             			    {
-            			    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:151:4: ( '<' | '<=' | '>' | '>=' )
+            			    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:151:4: ( '<' | '<=' | '>' | '>=' )
             			    	int alt9 = 4;
             			    	switch ( input.LA(1) ) 
             			    	{
@@ -1200,7 +1186,7 @@ public class NCalcParser : Parser
             			    	switch (alt9) 
             			    	{
             			    	    case 1 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:151:6: '<'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:151:6: '<'
             			    	        {
             			    	        	char_literal12=(IToken)Match(input,32,FOLLOW_32_in_relationalExpression485); 
             			    	        		char_literal12_tree = (CommonTree)adaptor.Create(char_literal12);
@@ -1211,7 +1197,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 2 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:152:6: '<='
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:152:6: '<='
             			    	        {
             			    	        	string_literal13=(IToken)Match(input,33,FOLLOW_33_in_relationalExpression495); 
             			    	        		string_literal13_tree = (CommonTree)adaptor.Create(string_literal13);
@@ -1222,7 +1208,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 3 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:153:6: '>'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:153:6: '>'
             			    	        {
             			    	        	char_literal14=(IToken)Match(input,34,FOLLOW_34_in_relationalExpression506); 
             			    	        		char_literal14_tree = (CommonTree)adaptor.Create(char_literal14);
@@ -1233,7 +1219,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 4 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:154:6: '>='
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:154:6: '>='
             			    	        {
             			    	        	string_literal15=(IToken)Match(input,35,FOLLOW_35_in_relationalExpression516); 
             			    	        		string_literal15_tree = (CommonTree)adaptor.Create(string_literal15);
@@ -1299,7 +1285,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "shiftExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:159:1: shiftExpression returns [LogicalExpression value] : left= additiveExpression ( ( '<<' | '>>' ) right= additiveExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:159:1: shiftExpression returns [LogicalExpression value] : left= additiveExpression ( ( '<<' | '>>' ) right= additiveExpression )* ;
     public NCalcParser.shiftExpression_return shiftExpression() // throws RecognitionException [1]
     {   
         NCalcParser.shiftExpression_return retval = new NCalcParser.shiftExpression_return();
@@ -1322,8 +1308,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:163:2: (left= additiveExpression ( ( '<<' | '>>' ) right= additiveExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:163:4: left= additiveExpression ( ( '<<' | '>>' ) right= additiveExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:163:2: (left= additiveExpression ( ( '<<' | '>>' ) right= additiveExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:163:4: left= additiveExpression ( ( '<<' | '>>' ) right= additiveExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -1333,7 +1319,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:163:54: ( ( '<<' | '>>' ) right= additiveExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:163:54: ( ( '<<' | '>>' ) right= additiveExpression )*
             	do 
             	{
             	    int alt12 = 2;
@@ -1348,9 +1334,9 @@ public class NCalcParser : Parser
             	    switch (alt12) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:164:4: ( '<<' | '>>' ) right= additiveExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:164:4: ( '<<' | '>>' ) right= additiveExpression
             			    {
-            			    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:164:4: ( '<<' | '>>' )
+            			    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:164:4: ( '<<' | '>>' )
             			    	int alt11 = 2;
             			    	int LA11_0 = input.LA(1);
 
@@ -1372,7 +1358,7 @@ public class NCalcParser : Parser
             			    	switch (alt11) 
             			    	{
             			    	    case 1 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:164:6: '<<'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:164:6: '<<'
             			    	        {
             			    	        	string_literal16=(IToken)Match(input,36,FOLLOW_36_in_shiftExpression571); 
             			    	        		string_literal16_tree = (CommonTree)adaptor.Create(string_literal16);
@@ -1383,7 +1369,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 2 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:165:6: '>>'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:165:6: '>>'
             			    	        {
             			    	        	string_literal17=(IToken)Match(input,37,FOLLOW_37_in_shiftExpression581); 
             			    	        		string_literal17_tree = (CommonTree)adaptor.Create(string_literal17);
@@ -1449,7 +1435,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "additiveExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:170:1: additiveExpression returns [LogicalExpression value] : left= multiplicativeExpression ( ( '+' | '-' ) right= multiplicativeExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:170:1: additiveExpression returns [LogicalExpression value] : left= multiplicativeExpression ( ( '+' | '-' ) right= multiplicativeExpression )* ;
     public NCalcParser.additiveExpression_return additiveExpression() // throws RecognitionException [1]
     {   
         NCalcParser.additiveExpression_return retval = new NCalcParser.additiveExpression_return();
@@ -1472,8 +1458,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:174:2: (left= multiplicativeExpression ( ( '+' | '-' ) right= multiplicativeExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:174:4: left= multiplicativeExpression ( ( '+' | '-' ) right= multiplicativeExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:174:2: (left= multiplicativeExpression ( ( '+' | '-' ) right= multiplicativeExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:174:4: left= multiplicativeExpression ( ( '+' | '-' ) right= multiplicativeExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -1483,7 +1469,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:174:60: ( ( '+' | '-' ) right= multiplicativeExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:174:60: ( ( '+' | '-' ) right= multiplicativeExpression )*
             	do 
             	{
             	    int alt14 = 2;
@@ -1498,9 +1484,9 @@ public class NCalcParser : Parser
             	    switch (alt14) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:175:4: ( '+' | '-' ) right= multiplicativeExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:175:4: ( '+' | '-' ) right= multiplicativeExpression
             			    {
-            			    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:175:4: ( '+' | '-' )
+            			    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:175:4: ( '+' | '-' )
             			    	int alt13 = 2;
             			    	int LA13_0 = input.LA(1);
 
@@ -1522,7 +1508,7 @@ public class NCalcParser : Parser
             			    	switch (alt13) 
             			    	{
             			    	    case 1 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:175:6: '+'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:175:6: '+'
             			    	        {
             			    	        	char_literal18=(IToken)Match(input,38,FOLLOW_38_in_additiveExpression636); 
             			    	        		char_literal18_tree = (CommonTree)adaptor.Create(char_literal18);
@@ -1533,7 +1519,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 2 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:176:6: '-'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:176:6: '-'
             			    	        {
             			    	        	char_literal19=(IToken)Match(input,39,FOLLOW_39_in_additiveExpression646); 
             			    	        		char_literal19_tree = (CommonTree)adaptor.Create(char_literal19);
@@ -1599,7 +1585,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "multiplicativeExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:181:1: multiplicativeExpression returns [LogicalExpression value] : left= unaryExpression ( ( '*' | '/' | '%' ) right= unaryExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:181:1: multiplicativeExpression returns [LogicalExpression value] : left= unaryExpression ( ( '*' | '/' | '%' ) right= unaryExpression )* ;
     public NCalcParser.multiplicativeExpression_return multiplicativeExpression() // throws RecognitionException [1]
     {   
         NCalcParser.multiplicativeExpression_return retval = new NCalcParser.multiplicativeExpression_return();
@@ -1624,8 +1610,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:185:2: (left= unaryExpression ( ( '*' | '/' | '%' ) right= unaryExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:185:4: left= unaryExpression ( ( '*' | '/' | '%' ) right= unaryExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:185:2: (left= unaryExpression ( ( '*' | '/' | '%' ) right= unaryExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:185:4: left= unaryExpression ( ( '*' | '/' | '%' ) right= unaryExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -1635,7 +1621,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, left.Tree);
             	 retval.value =  ((left != null) ? left.value : null); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:185:52: ( ( '*' | '/' | '%' ) right= unaryExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:185:52: ( ( '*' | '/' | '%' ) right= unaryExpression )*
             	do 
             	{
             	    int alt16 = 2;
@@ -1650,9 +1636,9 @@ public class NCalcParser : Parser
             	    switch (alt16) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:186:4: ( '*' | '/' | '%' ) right= unaryExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:186:4: ( '*' | '/' | '%' ) right= unaryExpression
             			    {
-            			    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:186:4: ( '*' | '/' | '%' )
+            			    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:186:4: ( '*' | '/' | '%' )
             			    	int alt15 = 3;
             			    	switch ( input.LA(1) ) 
             			    	{
@@ -1681,7 +1667,7 @@ public class NCalcParser : Parser
             			    	switch (alt15) 
             			    	{
             			    	    case 1 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:186:6: '*'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:186:6: '*'
             			    	        {
             			    	        	char_literal20=(IToken)Match(input,40,FOLLOW_40_in_multiplicativeExpression701); 
             			    	        		char_literal20_tree = (CommonTree)adaptor.Create(char_literal20);
@@ -1692,7 +1678,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 2 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:187:6: '/'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:187:6: '/'
             			    	        {
             			    	        	char_literal21=(IToken)Match(input,41,FOLLOW_41_in_multiplicativeExpression711); 
             			    	        		char_literal21_tree = (CommonTree)adaptor.Create(char_literal21);
@@ -1703,7 +1689,7 @@ public class NCalcParser : Parser
             			    	        }
             			    	        break;
             			    	    case 3 :
-            			    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:188:6: '%'
+            			    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:188:6: '%'
             			    	        {
             			    	        	char_literal22=(IToken)Match(input,42,FOLLOW_42_in_multiplicativeExpression721); 
             			    	        		char_literal22_tree = (CommonTree)adaptor.Create(char_literal22);
@@ -1769,7 +1755,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "unaryExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:194:1: unaryExpression returns [LogicalExpression value] : ( primaryExpression | ( '!' | 'not' ) primaryExpression | ( '~' ) primaryExpression | '-' primaryExpression );
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:194:1: unaryExpression returns [LogicalExpression value] : ( primaryExpression | ( '!' | 'not' ) primaryExpression | ( '~' ) primaryExpression | '-' primaryExpression );
     public NCalcParser.unaryExpression_return unaryExpression() // throws RecognitionException [1]
     {   
         NCalcParser.unaryExpression_return retval = new NCalcParser.unaryExpression_return();
@@ -1789,13 +1775,12 @@ public class NCalcParser : Parser
         NCalcParser.primaryExpression_return primaryExpression29 = null;
 
 
-        CommonTree set24_tree=null;
         CommonTree char_literal26_tree=null;
         CommonTree char_literal28_tree=null;
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:195:2: ( primaryExpression | ( '!' | 'not' ) primaryExpression | ( '~' ) primaryExpression | '-' primaryExpression )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:195:2: ( primaryExpression | ( '!' | 'not' ) primaryExpression | ( '~' ) primaryExpression | '-' primaryExpression )
             int alt17 = 4;
             switch ( input.LA(1) ) 
             {
@@ -1838,7 +1823,7 @@ public class NCalcParser : Parser
             switch (alt17) 
             {
                 case 1 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:195:4: primaryExpression
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:195:4: primaryExpression
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -1852,7 +1837,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:196:8: ( '!' | 'not' ) primaryExpression
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:196:8: ( '!' | 'not' ) primaryExpression
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -1879,12 +1864,12 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 3 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:197:8: ( '~' ) primaryExpression
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:197:8: ( '~' ) primaryExpression
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
-                    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:197:8: ( '~' )
-                    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:197:9: '~'
+                    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:197:8: ( '~' )
+                    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:197:9: '~'
                     	{
                     		char_literal26=(IToken)Match(input,45,FOLLOW_45_in_unaryExpression791); 
                     			char_literal26_tree = (CommonTree)adaptor.Create(char_literal26);
@@ -1903,7 +1888,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 4 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:198:8: '-' primaryExpression
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:198:8: '-' primaryExpression
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -1954,7 +1939,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "primaryExpression"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:201:1: primaryExpression returns [LogicalExpression value] : ( '(' logicalExpression ')' | expr= value | identifier ( arguments )? );
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:201:1: primaryExpression returns [LogicalExpression value] : ( '(' logicalExpression ')' | expr= value | identifier ( arguments )? );
     public NCalcParser.primaryExpression_return primaryExpression() // throws RecognitionException [1]
     {   
         NCalcParser.primaryExpression_return retval = new NCalcParser.primaryExpression_return();
@@ -1978,7 +1963,7 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:202:2: ( '(' logicalExpression ')' | expr= value | identifier ( arguments )? )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:202:2: ( '(' logicalExpression ')' | expr= value | identifier ( arguments )? )
             int alt19 = 3;
             switch ( input.LA(1) ) 
             {
@@ -2013,7 +1998,7 @@ public class NCalcParser : Parser
             switch (alt19) 
             {
                 case 1 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:202:4: '(' logicalExpression ')'
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:202:4: '(' logicalExpression ')'
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2035,7 +2020,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:203:4: expr= value
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:203:4: expr= value
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2049,7 +2034,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 3 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:204:4: identifier ( arguments )?
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:204:4: identifier ( arguments )?
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2059,7 +2044,7 @@ public class NCalcParser : Parser
 
                     	adaptor.AddChild(root_0, identifier33.Tree);
                     	retval.value =  (LogicalExpression) ((identifier33 != null) ? identifier33.value : null); 
-                    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:204:66: ( arguments )?
+                    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:204:66: ( arguments )?
                     	int alt18 = 2;
                     	int LA18_0 = input.LA(1);
 
@@ -2070,7 +2055,7 @@ public class NCalcParser : Parser
                     	switch (alt18) 
                     	{
                     	    case 1 :
-                    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:204:67: arguments
+                    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:204:67: arguments
                     	        {
                     	        	PushFollow(FOLLOW_arguments_in_primaryExpression856);
                     	        	arguments34 = arguments();
@@ -2121,7 +2106,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "value"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:207:1: value returns [ValueExpression value] : ( INTEGER | FLOAT | STRING | DATETIME | TRUE | FALSE );
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:207:1: value returns [ValueExpression value] : ( INTEGER | FLOAT | STRING | DATETIME | TRUE | FALSE );
     public NCalcParser.value_return value() // throws RecognitionException [1]
     {   
         NCalcParser.value_return retval = new NCalcParser.value_return();
@@ -2145,7 +2130,7 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:208:2: ( INTEGER | FLOAT | STRING | DATETIME | TRUE | FALSE )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:208:2: ( INTEGER | FLOAT | STRING | DATETIME | TRUE | FALSE )
             int alt20 = 6;
             switch ( input.LA(1) ) 
             {
@@ -2189,7 +2174,7 @@ public class NCalcParser : Parser
             switch (alt20) 
             {
                 case 1 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:208:5: INTEGER
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:208:5: INTEGER
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2209,7 +2194,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:209:4: FLOAT
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:209:4: FLOAT
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2222,7 +2207,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 3 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:210:4: STRING
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:210:4: STRING
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2235,7 +2220,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 4 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:211:5: DATETIME
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:211:5: DATETIME
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2248,7 +2233,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 5 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:212:4: TRUE
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:212:4: TRUE
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2261,7 +2246,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 6 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:213:4: FALSE
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:213:4: FALSE
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2307,7 +2292,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "identifier"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:216:1: identifier returns [Identifier value] : ( ID | NAME );
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:216:1: identifier returns [Identifier value] : ( ID | NAME );
     public NCalcParser.identifier_return identifier() // throws RecognitionException [1]
     {   
         NCalcParser.identifier_return retval = new NCalcParser.identifier_return();
@@ -2323,7 +2308,7 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:217:2: ( ID | NAME )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:217:2: ( ID | NAME )
             int alt21 = 2;
             int LA21_0 = input.LA(1);
 
@@ -2345,7 +2330,7 @@ public class NCalcParser : Parser
             switch (alt21) 
             {
                 case 1 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:217:5: ID
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:217:5: ID
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2358,7 +2343,7 @@ public class NCalcParser : Parser
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:218:5: NAME
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:218:5: NAME
                     {
                     	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2404,7 +2389,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "expressionList"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:221:1: expressionList returns [List<LogicalExpression> value] : first= logicalExpression ( ',' follow= logicalExpression )* ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:221:1: expressionList returns [List<LogicalExpression> value] : first= logicalExpression ( ',' follow= logicalExpression )* ;
     public NCalcParser.expressionList_return expressionList() // throws RecognitionException [1]
     {   
         NCalcParser.expressionList_return retval = new NCalcParser.expressionList_return();
@@ -2425,8 +2410,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:225:2: (first= logicalExpression ( ',' follow= logicalExpression )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:225:4: first= logicalExpression ( ',' follow= logicalExpression )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:225:2: (first= logicalExpression ( ',' follow= logicalExpression )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:225:4: first= logicalExpression ( ',' follow= logicalExpression )*
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2436,7 +2421,7 @@ public class NCalcParser : Parser
 
             	adaptor.AddChild(root_0, first.Tree);
             	expressions.Add(((first != null) ? first.value : null));
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:225:62: ( ',' follow= logicalExpression )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:225:62: ( ',' follow= logicalExpression )*
             	do 
             	{
             	    int alt22 = 2;
@@ -2451,7 +2436,7 @@ public class NCalcParser : Parser
             	    switch (alt22) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:225:64: ',' follow= logicalExpression
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:225:64: ',' follow= logicalExpression
             			    {
             			    	char_literal43=(IToken)Match(input,48,FOLLOW_48_in_expressionList973); 
             			    		char_literal43_tree = (CommonTree)adaptor.Create(char_literal43);
@@ -2511,7 +2496,7 @@ public class NCalcParser : Parser
     };
 
     // $ANTLR start "arguments"
-    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:229:1: arguments returns [List<LogicalExpression> value] : '(' ( expressionList )? ')' ;
+    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:229:1: arguments returns [List<LogicalExpression> value] : '(' ( expressionList )? ')' ;
     public NCalcParser.arguments_return arguments() // throws RecognitionException [1]
     {   
         NCalcParser.arguments_return retval = new NCalcParser.arguments_return();
@@ -2532,8 +2517,8 @@ public class NCalcParser : Parser
 
         try 
     	{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:233:2: ( '(' ( expressionList )? ')' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:233:4: '(' ( expressionList )? ')'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:233:2: ( '(' ( expressionList )? ')' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:233:4: '(' ( expressionList )? ')'
             {
             	root_0 = (CommonTree)adaptor.GetNilNode();
 
@@ -2541,7 +2526,7 @@ public class NCalcParser : Parser
             		char_literal44_tree = (CommonTree)adaptor.Create(char_literal44);
             		adaptor.AddChild(root_0, char_literal44_tree);
 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:233:8: ( expressionList )?
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:233:8: ( expressionList )?
             	int alt23 = 2;
             	int LA23_0 = input.LA(1);
 
@@ -2552,7 +2537,7 @@ public class NCalcParser : Parser
             	switch (alt23) 
             	{
             	    case 1 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:233:10: expressionList
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:233:10: expressionList
             	        {
             	        	PushFollow(FOLLOW_expressionList_in_arguments1010);
             	        	expressionList45 = expressionList();

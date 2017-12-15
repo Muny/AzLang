@@ -34,6 +34,11 @@ namespace AzLang.Extensions.DefaultExtensions
         {
 
         }
+
+        public void SetOwner(object owner)
+        {
+            
+        }
     }
 
     public static class File_Extension_Operations

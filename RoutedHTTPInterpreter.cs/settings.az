@@ -1,0 +1,48 @@
+[DebugEnabled, false]
+<$az
+
+var test = 'lol';
+
+var arr = ['firstValue', 'lol', 1, 'second to last value', 'lastValue'];
+
+// first value
+write(arr(0));
+
+//last value
+write(arr(length(arr)-1));
+
+// second to last value
+write(arr(length(arr)-2));
+
+func equals(value, check) {
+
+	if (value == check) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+write('equals: ' + equals(3,3));
+
+func myinvoker(method_to_invoke, str_argument) {
+	method_to_invoke(str_argument);
+}
+
+
+
+myinvoker(write, 'lol this is a write test');
+
+write(typeof(undefined));
+
+write(undefined);
+
+write('lenof(10): ' + length(lol));
+
+write('secret function returns: ' + secretFunction());
+
+write('Client: ' + web.get_client_ip() + ':' + web.get_client_port());
+
+write(equals(1,1));
+
+az$>

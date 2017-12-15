@@ -1,0 +1,553 @@
+<html>
+	<head>
+		<title>
+			<$az
+				write(curr_sess(1));
+			az$>
+'s Agenda
+		</title>
+
+		<meta content='width=device-width, initial-scale=0.35, user-scalable=1' name='viewport' />
+
+		
+
+		<link href='/res/fullcalendar/fullcalendar.css' rel='stylesheet' />
+		<link href='/res/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+		<script src='/res/fullcalendar/lib/moment.min.js'></script>
+		<script src='/res/fullcalendar/lib/jquery.min.js'></script>
+		<script src='/res/fullcalendar/fullcalendar.min.js'></script>
+		<script>
+
+		/*
+ * Date Format 1.2.3
+ * (c) 2007-2009 Steven Levithan <stevenlevithan.com>
+ * MIT license
+ *
+ * Includes enhancements by Scott Trenda <scott.trenda.net>
+ * and Kris Kowal <cixar.com/~kris.kowal/>
+ *
+ * Accepts a date, a mask, or a date and a mask.
+ * Returns a formatted version of the given date.
+ * The date defaults to the current date/time.
+ * The mask defaults to dateFormat.masks.default.
+ */
+
+var dateFormat = function () {
+    var token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g,
+        timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g,
+        timezoneClip = /[^-+\dA-Z]/g,
+        pad = function (val, len) {
+            val = String(val);
+            len = len || 2;
+            while (val.length < len) val = "0" + val;
+            return val;
+        };
+
+    // Regexes and supporting functions are cached through closure
+    return function (date, mask, utc) {
+        var dF = dateFormat;
+
+        // You can't provide utc if you skip other args (use the "UTC:" mask prefix)
+        if (arguments.length == 1 && Object.prototype.toString.call(date) == "[object String]" && !/\d/.test(date)) {
+            mask = date;
+            date = undefined;
+        }
+
+        // Passing date through Date applies Date.parse, if necessary
+        date = date ? new Date(date) : new Date;
+        if (isNaN(date)) throw SyntaxError("invalid date");
+
+        mask = String(dF.masks[mask] || mask || dF.masks["default"]);
+
+        // Allow setting the utc argument via the mask
+        if (mask.slice(0, 4) == "UTC:") {
+            mask = mask.slice(4);
+            utc = true;
+        }
+
+        var _ = utc ? "getUTC" : "get",
+            d = date[_ + "Date"](),
+            D = date[_ + "Day"](),
+            m = date[_ + "Month"](),
+            y = date[_ + "FullYear"](),
+            H = date[_ + "Hours"](),
+            M = date[_ + "Minutes"](),
+            s = date[_ + "Seconds"](),
+            L = date[_ + "Milliseconds"](),
+            o = utc ? 0 : date.getTimezoneOffset(),
+            flags = {
+                d:    d,
+                dd:   pad(d),
+                ddd:  dF.i18n.dayNames[D],
+                dddd: dF.i18n.dayNames[D + 7],
+                m:    m + 1,
+                mm:   pad(m + 1),
+                mmm:  dF.i18n.monthNames[m],
+                mmmm: dF.i18n.monthNames[m + 12],
+                yy:   String(y).slice(2),
+                yyyy: y,
+                h:    H % 12 || 12,
+                hh:   pad(H % 12 || 12),
+                H:    H,
+                HH:   pad(H),
+                M:    M,
+                MM:   pad(M),
+                s:    s,
+                ss:   pad(s),
+                l:    pad(L, 3),
+                L:    pad(L > 99 ? Math.round(L / 10) : L),
+                t:    H < 12 ? "a"  : "p",
+                tt:   H < 12 ? "am" : "pm",
+                T:    H < 12 ? "A"  : "P",
+                TT:   H < 12 ? "AM" : "PM",
+                Z:    utc ? "UTC" : (String(date).match(timezone) || [""]).pop().replace(timezoneClip, ""),
+                o:    (o > 0 ? "-" : "+") + pad(Math.floor(Math.abs(o) / 60) * 100 + Math.abs(o) % 60, 4),
+                S:    ["th", "st", "nd", "rd"][d % 10 > 3 ? 0 : (d % 100 - d % 10 != 10) * d % 10]
+            };
+
+        return mask.replace(token, function ($0) {
+            return $0 in flags ? flags[$0] : $0.slice(1, $0.length - 1);
+        });
+    };
+}();
+
+// Some common format strings
+dateFormat.masks = {
+    "default":      "ddd mmm dd yyyy HH:MM:ss",
+    shortDate:      "m/d/yy",
+    mediumDate:     "mmm d, yyyy",
+    longDate:       "mmmm d, yyyy",
+    fullDate:       "dddd, mmmm d, yyyy",
+    shortTime:      "h:MM TT",
+    mediumTime:     "h:MM:ss TT",
+    longTime:       "h:MM:ss TT Z",
+    isoDate:        "yyyy-mm-dd",
+    isoTime:        "HH:MM:ss",
+    isoDateTime:    "yyyy-mm-dd'T'HH:MM:ss",
+    isoUtcDateTime: "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"
+};
+
+// Internationalization strings
+dateFormat.i18n = {
+    dayNames: [
+        "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    ],
+    monthNames: [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+        "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+    ]
+};
+
+			$(document).ready(function() {
+
+				setTimeout(function() {
+					document.getElementById('calendar').style.height = window.innerHeight + "px";
+				
+				$('#calendar').fullCalendar({
+					header: {
+						left: 'prev,next today',
+						center: 'title',
+						right: 'month,agendaWeek,agendaDay'
+					},
+					defaultDate: '2014-09-12',
+					selectable: true,
+					selectHelper: true,
+					eventClick: function(event, jsEvent, view) {
+
+						clickedEvent = event;
+						clickedElement = jsEvent.target.parentNode.parentNode;
+
+						var event_date = new Date(event.end.format());
+
+						document.getElementById("date").innerText = "Due: " + dateFormat(event_date, dateFormat.masks.fullDate, false);
+
+						document.getElementById("event-title").innerText = event.title;
+
+						if (event.iscompleted)
+						{
+							document.getElementById("completed-bool").innerHTML = "Completed &#10003;";
+							document.getElementById("markcomplete").style.display = "none";
+						}
+						else
+						{
+							document.getElementById("completed-bool").innerText = "Not Completed";
+							document.getElementById("markcomplete").style.display = "";
+						}
+
+						document.getElementById("eventModal").showModal();
+					},
+					eventRender: function(event, element, view) {
+						console.log(element);
+						if (event.iscompleted)
+						{
+							element[0].style.backgroundColor = "#93ec9d";
+							element[0].style.borderColor = "#93ec9d";
+						}
+						else
+						{
+							element[0].style.backgroundColor = "#ec7d7d";
+							element[0].style.borderColor = "#ec7d7d";
+						}
+					},
+					select: function(start, end) {
+
+						document.getElementById('addEventModal').onclose = function() {
+
+							var returnVal = document.getElementById('addEventModal').returnValue;
+
+							if (returnVal != "null" && returnVal != undefined && returnVal != "")
+							{
+								var title = returnVal;
+
+								var id = makeid();
+
+								var eventData;
+								if (title) {
+									eventData = {
+										title: title,
+										start: start,
+										end: end,
+										iscompleted: false,
+										id: id
+									};
+
+									var dateString = start.format();
+
+									var req = new XMLHttpRequest();
+
+									req.onreadystatechange = function() {
+										if (req.readyState == 4 && req.status == 200)
+										{
+											if (req.responseText.trim() == "True")
+											{
+												$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+											}
+											else
+											{
+												alert('fail: ' + req.responseText);
+											}
+										}
+										else if (req.readyState == 4)
+										{
+											alert('err');
+										}
+									}
+
+									req.open("GET", "/api/addevent?id=" + encodeURIComponent(id) + "&title=" + encodeURIComponent(replaceAll(title, "\"", "\\\"")) + "&start=" + encodeURIComponent(dateString) + "&end=" + encodeURIComponent(end.format()), true);
+									req.send();
+
+									
+								}
+							}
+							$('#calendar').fullCalendar('unselect');
+						}
+
+						modalClass();
+
+						
+					},
+					editable: true,
+					eventLimit: true, // allow "more" link when too many events
+					eventSources: [
+
+				        // your event source
+				        {
+				            url: '/events', // use the `url` property
+				            error: function() {
+				            	alert("error fetching events");
+				            }
+				        }
+
+				        // any other sources...
+
+				    ],
+				});
+
+				document.getElementById("loading").setAttribute("hidden", "");
+				}, 1000);
+
+				
+				
+			});
+
+function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 7; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
+function replaceAll(string, find, replace) {
+  return string.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+}
+
+function escapeRegExp(string) {
+    return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
+
+			function modalDescription() {
+				document.getElementById("modal-class-selection").style.marginLeft = "-800px";
+				document.getElementById("modal-description").style.marginLeft = "-100px";
+			}
+
+			function modalClass() {
+
+				if (document.querySelector('input[name="radios"]:checked') != null)
+					document.querySelector('input[name="radios"]:checked').checked = false;
+
+				document.getElementById("description").value = "";
+
+				document.getElementById("modal-class-selection").style.marginLeft = "-100px";
+				document.getElementById("modal-description").style.marginLeft = "700px";
+
+				document.getElementById('addEventModal').returnValue = null;
+
+				document.getElementById('addEventModal').showModal();
+			}
+
+			function modalFinish() {
+				document.getElementById('addEventModal').returnValue = "[" + selectedClass + "] " + document.getElementById("description").value;
+
+				document.getElementById('addEventModal').close();			
+			}
+
+			function markComplete(event, element) {
+
+				
+
+				// send xmlhttp request
+
+				var req = new XMLHttpRequest();
+
+				req.onreadystatechange = function() {
+					if (req.readyState == 4 && req.status == 200)
+					{
+						if (req.responseText.trim() == "True")
+						{
+							event.iscompleted = true;
+
+							element.style.backgroundColor = "#93ec9d";
+							element.style.borderColor = "#93ec9d";
+						}
+						else
+						{
+							alert('fail: ' + req.responseText);
+						}
+					}
+					else if (req.readyState == 4)
+					{
+						alert('err');
+					}
+				}
+
+				var dateString = event.start.format();
+
+				req.open("GET", "/api/markEventComplete?id=" + encodeURIComponent(event.id), true);
+				req.send();
+			}
+
+			var selectedClass = "";
+
+			var clickedElement;
+			var clickedEvent;
+			
+		</script>
+
+		<style>
+
+			@font-face {
+			    font-family: "Segoe UI";
+			    font-weight: 100;
+			    src: url('/res/segoe_light.ttf');
+			}
+
+			body {
+				font-family: "Segoe UI";
+				font-size: 2em;
+			}
+
+			#calendar {
+				height: 100%;
+				width: 100%;
+			}
+			h1 {
+			  margin-top: 0;
+			}
+
+			button {
+				font-size:0.5em;
+			  display: inline-block;
+			  border-radius: 3px;
+			  border: none;
+			  padding: 0.4rem 0.8em;
+			  background: #69c773;
+			  border-bottom: 1px solid #498b50;
+			  color: white;
+			  -webkit-font-smoothing: antialiased;
+			  font-weight: bold;
+			  margin: 0 0.25rem;
+			  text-align: center;
+			  outline: none;
+			}
+
+			button.cancel {
+				background: rgb(236, 125, 125);
+			    border-bottom: 1px solid rgb(214,39,39);
+			}
+
+			button:hover, button:focus {
+			  opacity: 0.75;
+			  cursor: pointer;
+			}
+
+			button:active {
+			  opacity: 1;
+			  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+			}
+
+			#addEventModal {
+				height: 500px;
+			}
+
+			#addEventModal, #eventModal {
+			  background: #FFF;
+			  width: 800px;
+			  font-size:2em;
+			  text-align: center;
+			  padding: 1.5em;
+			  margin: 1em auto;
+			  border: 0;
+			  border-top: 5px solid #69c773;
+			  border-bottom: 5px solid #69c773;
+			  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+
+			  overflow: hidden;
+			}
+
+			#addEventModal::backdrop, #eventModal::backdrop {
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			#modal-class-selection {
+
+				position: absolute;
+
+				width: 100%;
+
+				transition: margin-left 400ms;
+
+				margin-left: -100px;
+				
+			}
+
+			#modal-description {
+
+				margin-left: 700px;
+
+				transition: margin-left 300ms;
+
+				position:absolute;
+				width: 100%;
+			}
+
+			#classes {
+				margin-top:-100px;
+			}
+
+			#class-radios {
+				margin-top: -50px;
+			}
+
+			textarea {
+				width:500px;
+				height:80px;
+
+				margin:10px;
+
+				font-size:0.5em;
+
+				padding:10px;
+
+				font-family: "Gotham";
+				font-weight:200;
+
+				border:none;
+
+				border: 5px solid #ccc;
+
+				outline:none;
+
+				padding-top:17px;
+
+				-webkit-filter: grayscale(100%);
+
+				color: #777;
+			}
+
+			textarea:focus {
+				border: 5px solid #69c773;
+				-webkit-filter: grayscale(0%);
+			}
+
+			#eventModal {
+				position: absolute;
+				font-size: 1.5em;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="loading" align="center" style="margin-top:100px;">
+			<p style="font-family: 'Helvetica Neue', 'Segoe UI Light', 'Gotham Light', 'Segoe UI'; font-weight: 300; font-size: 2em;">Loading agenda...</p>
+			<img src="/res/loading.gif" width="100px" style="margin-top:50px;" />
+		</div>
+		<div id='calendar'></div>
+		<dialog id="addEventModal">
+			<div id="modal-class-selection">
+				
+				<div id="classes">
+					<p style="margin-top:10px;">Class: </p>
+					<div style="margin-top:-50px;">
+						<button onclick="selectedClass = 'Amer. Hist.'; modalDescription();">American History</button>
+						<br>
+						<button onclick="selectedClass = 'Bio.'; modalDescription();">Biology</button>
+						<br>
+						<button onclick="selectedClass = 'Geo.'; modalDescription();">Geometry</button>
+						<br>
+						<button onclick="selectedClass = 'Lang. Arts'; modalDescription();">Language Arts</button>
+						<br>
+						<button onclick="selectedClass = 'AET'; modalDescription();">AET</button>
+						<br>
+					</div>
+				</div>
+				<div style="margin-top:60px;">
+					<button class="cancel" onclick="document.getElementById('addEventModal').returnValue = null; document.getElementById('addEventModal').close();">Cancel</button>
+				</div>
+			</div>
+			<div id="modal-description">
+				<p>Description: </p>
+				<p><textarea id="description" placeholder="Homework description..."></textarea></p>
+				<button class="cancel" onclick="document.getElementById('addEventModal').returnValue = null; document.getElementById('addEventModal').close();">Cancel</button>
+				<button onclick="modalFinish()">Add &rarr;</button>
+			</div>
+		</dialog>
+
+		<dialog id="eventModal">
+			<p id="date">Tuesday, September 2014</p>
+			<p style="font-size: 0.8em;" id="completed-bool">Not completed</p>
+			<p id="event-title">[Amer. Hist.] pg. 187 #1-8, pg. 189 checkpoint</p>
+			<button style="margin-right: 50px;" id="markcomplete" onclick="markComplete(clickedEvent, clickedElement);document.getElementById('eventModal').close();">Mark complete</button>
+			<button onclick="document.getElementById('eventModal').close();">Close</button>
+		</dialog>
+	</body>
+</html>

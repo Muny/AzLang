@@ -36,6 +36,8 @@ namespace AzLang.Extensions
         void OnEnabled();
 
         void OnDisabled();
+
+        void SetOwner(object owner);
     }
 
     public interface IExtensionIdentifier

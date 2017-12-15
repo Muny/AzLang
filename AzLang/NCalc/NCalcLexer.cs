@@ -1,14 +1,17 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g 2009-11-11 17:56:42
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g 2009-11-11 17:56:42
 
 
 using System;
 using Antlr.Runtime;
 using IList 		= System.Collections.IList;
 using ArrayList 	= System.Collections.ArrayList;
-using Stack 		= Antlr.Runtime.Collections.StackList;
+//using Stack 		= Antlr.Runtime.Collections.StackList;
 
 
 public class NCalcLexer : Lexer {
+
+    /*public const int DEFAULT_TOKEN_CHANNEL = 0;
+    public const int HIDDEN = 1;*/
     public const int T__29 = 29;
     public const int T__28 = 28;
     public const int T__27 = 27;
@@ -74,7 +77,7 @@ public class NCalcLexer : Lexer {
     
     override public string GrammarFileName
     {
-    	get { return "C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g";} 
+    	get { return "C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g";} 
     }
 
     // $ANTLR start "T__19"
@@ -84,8 +87,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__19;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:7:7: ( '?' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:7:9: '?'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:7:7: ( '?' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:7:9: '?'
             {
             	Match('?'); 
 
@@ -107,8 +110,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__20;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:8:7: ( ':' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:8:9: ':'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:8:7: ( ':' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:8:9: ':'
             {
             	Match(':'); 
 
@@ -130,8 +133,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__21;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:9:7: ( '||' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:9:9: '||'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:9:7: ( '||' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:9:9: '||'
             {
             	Match("||"); 
 
@@ -154,8 +157,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__22;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:10:7: ( 'or' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:10:9: 'or'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:10:7: ( 'or' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:10:9: 'or'
             {
             	Match("or"); 
 
@@ -178,8 +181,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__23;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:11:7: ( '&&' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:11:9: '&&'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:11:7: ( '&&' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:11:9: '&&'
             {
             	Match("&&"); 
 
@@ -202,8 +205,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__24;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:12:7: ( 'and' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:12:9: 'and'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:12:7: ( 'and' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:12:9: 'and'
             {
             	Match("and"); 
 
@@ -226,8 +229,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__25;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:13:7: ( '|' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:13:9: '|'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:13:7: ( '|' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:13:9: '|'
             {
             	Match('|'); 
 
@@ -249,8 +252,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__26;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:14:7: ( '^' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:14:9: '^'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:14:7: ( '^' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:14:9: '^'
             {
             	Match('^'); 
 
@@ -272,8 +275,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__27;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:15:7: ( '&' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:15:9: '&'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:15:7: ( '&' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:15:9: '&'
             {
             	Match('&'); 
 
@@ -295,8 +298,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__28;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:16:7: ( '==' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:16:9: '=='
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:16:7: ( '==' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:16:9: '=='
             {
             	Match("=="); 
 
@@ -319,8 +322,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__29;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:17:7: ( '=' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:17:9: '='
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:17:7: ( '=' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:17:9: '='
             {
             	Match('='); 
 
@@ -342,8 +345,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__30;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:18:7: ( '!=' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:18:9: '!='
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:18:7: ( '!=' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:18:9: '!='
             {
             	Match("!="); 
 
@@ -366,8 +369,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__31;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:19:7: ( '<>' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:19:9: '<>'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:19:7: ( '<>' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:19:9: '<>'
             {
             	Match("<>"); 
 
@@ -390,8 +393,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__32;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:20:7: ( '<' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:20:9: '<'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:20:7: ( '<' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:20:9: '<'
             {
             	Match('<'); 
 
@@ -413,8 +416,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__33;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:21:7: ( '<=' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:21:9: '<='
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:21:7: ( '<=' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:21:9: '<='
             {
             	Match("<="); 
 
@@ -437,8 +440,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__34;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:22:7: ( '>' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:22:9: '>'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:22:7: ( '>' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:22:9: '>'
             {
             	Match('>'); 
 
@@ -460,8 +463,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__35;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:23:7: ( '>=' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:23:9: '>='
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:23:7: ( '>=' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:23:9: '>='
             {
             	Match(">="); 
 
@@ -484,8 +487,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__36;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:24:7: ( '<<' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:24:9: '<<'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:24:7: ( '<<' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:24:9: '<<'
             {
             	Match("<<"); 
 
@@ -508,8 +511,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__37;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:25:7: ( '>>' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:25:9: '>>'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:25:7: ( '>>' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:25:9: '>>'
             {
             	Match(">>"); 
 
@@ -532,8 +535,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__38;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:26:7: ( '+' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:26:9: '+'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:26:7: ( '+' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:26:9: '+'
             {
             	Match('+'); 
 
@@ -555,8 +558,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__39;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:27:7: ( '-' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:27:9: '-'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:27:7: ( '-' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:27:9: '-'
             {
             	Match('-'); 
 
@@ -578,8 +581,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__40;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:28:7: ( '*' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:28:9: '*'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:28:7: ( '*' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:28:9: '*'
             {
             	Match('*'); 
 
@@ -601,8 +604,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__41;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:29:7: ( '/' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:29:9: '/'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:29:7: ( '/' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:29:9: '/'
             {
             	Match('/'); 
 
@@ -624,8 +627,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__42;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:30:7: ( '%' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:30:9: '%'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:30:7: ( '%' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:30:9: '%'
             {
             	Match('%'); 
 
@@ -647,8 +650,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__43;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:31:7: ( '!' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:31:9: '!'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:31:7: ( '!' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:31:9: '!'
             {
             	Match('!'); 
 
@@ -670,8 +673,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__44;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:32:7: ( 'not' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:32:9: 'not'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:32:7: ( 'not' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:32:9: 'not'
             {
             	Match("not"); 
 
@@ -694,8 +697,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__45;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:33:7: ( '~' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:33:9: '~'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:33:7: ( '~' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:33:9: '~'
             {
             	Match('~'); 
 
@@ -717,8 +720,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__46;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:34:7: ( '(' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:34:9: '('
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:34:7: ( '(' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:34:9: '('
             {
             	Match('('); 
 
@@ -740,8 +743,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__47;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:35:7: ( ')' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:35:9: ')'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:35:7: ( ')' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:35:9: ')'
             {
             	Match(')'); 
 
@@ -763,8 +766,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = T__48;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:36:7: ( ',' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:36:9: ','
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:36:7: ( ',' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:36:9: ','
             {
             	Match(','); 
 
@@ -786,8 +789,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = TRUE;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:237:2: ( 'true' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:237:4: 'true'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:237:2: ( 'true' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:237:4: 'true'
             {
             	Match("true"); 
 
@@ -810,8 +813,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = FALSE;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:241:2: ( 'false' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:241:4: 'false'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:241:2: ( 'false' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:241:4: 'false'
             {
             	Match("false"); 
 
@@ -834,11 +837,11 @@ public class NCalcLexer : Lexer {
     		{
             int _type = ID;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:245:2: ( LETTER ( LETTER | DIGIT )* )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:245:5: LETTER ( LETTER | DIGIT )*
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:245:2: ( LETTER ( LETTER | DIGIT )* )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:245:5: LETTER ( LETTER | DIGIT )*
             {
             	mLETTER(); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:245:12: ( LETTER | DIGIT )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:245:12: ( LETTER | DIGIT )*
             	do 
             	{
             	    int alt1 = 2;
@@ -853,7 +856,7 @@ public class NCalcLexer : Lexer {
             	    switch (alt1) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:
             			    {
             			    	if ( (input.LA(1) >= '0' && input.LA(1) <= '9') || (input.LA(1) >= 'A' && input.LA(1) <= 'Z') || input.LA(1) == '_' || (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) 
             			    	{
@@ -897,10 +900,10 @@ public class NCalcLexer : Lexer {
     		{
             int _type = INTEGER;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:249:2: ( ( DIGIT )+ )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:249:4: ( DIGIT )+
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:249:2: ( ( DIGIT )+ )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:249:4: ( DIGIT )+
             {
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:249:4: ( DIGIT )+
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:249:4: ( DIGIT )+
             	int cnt2 = 0;
             	do 
             	{
@@ -916,7 +919,7 @@ public class NCalcLexer : Lexer {
             	    switch (alt2) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:249:4: DIGIT
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:249:4: DIGIT
             			    {
             			    	mDIGIT(); 
 
@@ -954,15 +957,15 @@ public class NCalcLexer : Lexer {
     		{
             int _type = FLOAT;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:2: ( ( DIGIT )* '.' ( DIGIT )+ ( E )? | ( DIGIT )+ E )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:2: ( ( DIGIT )* '.' ( DIGIT )+ ( E )? | ( DIGIT )+ E )
             int alt7 = 2;
             alt7 = dfa7.Predict(input);
             switch (alt7) 
             {
                 case 1 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:4: ( DIGIT )* '.' ( DIGIT )+ ( E )?
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:4: ( DIGIT )* '.' ( DIGIT )+ ( E )?
                     {
-                    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:4: ( DIGIT )*
+                    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:4: ( DIGIT )*
                     	do 
                     	{
                     	    int alt3 = 2;
@@ -977,7 +980,7 @@ public class NCalcLexer : Lexer {
                     	    switch (alt3) 
                     		{
                     			case 1 :
-                    			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:4: DIGIT
+                    			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:4: DIGIT
                     			    {
                     			    	mDIGIT(); 
 
@@ -993,7 +996,7 @@ public class NCalcLexer : Lexer {
                     		;	// Stops C# compiler whining that label 'loop3' has no statements
 
                     	Match('.'); 
-                    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:15: ( DIGIT )+
+                    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:15: ( DIGIT )+
                     	int cnt4 = 0;
                     	do 
                     	{
@@ -1009,7 +1012,7 @@ public class NCalcLexer : Lexer {
                     	    switch (alt4) 
                     		{
                     			case 1 :
-                    			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:15: DIGIT
+                    			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:15: DIGIT
                     			    {
                     			    	mDIGIT(); 
 
@@ -1028,7 +1031,7 @@ public class NCalcLexer : Lexer {
                     	loop4:
                     		;	// Stops C# compiler whining that label 'loop4' has no statements
 
-                    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:22: ( E )?
+                    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:22: ( E )?
                     	int alt5 = 2;
                     	int LA5_0 = input.LA(1);
 
@@ -1039,7 +1042,7 @@ public class NCalcLexer : Lexer {
                     	switch (alt5) 
                     	{
                     	    case 1 :
-                    	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:253:22: E
+                    	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:253:22: E
                     	        {
                     	        	mE(); 
 
@@ -1052,9 +1055,9 @@ public class NCalcLexer : Lexer {
                     }
                     break;
                 case 2 :
-                    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:254:4: ( DIGIT )+ E
+                    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:254:4: ( DIGIT )+ E
                     {
-                    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:254:4: ( DIGIT )+
+                    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:254:4: ( DIGIT )+
                     	int cnt6 = 0;
                     	do 
                     	{
@@ -1070,7 +1073,7 @@ public class NCalcLexer : Lexer {
                     	    switch (alt6) 
                     		{
                     			case 1 :
-                    			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:254:4: DIGIT
+                    			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:254:4: DIGIT
                     			    {
                     			    	mDIGIT(); 
 
@@ -1111,11 +1114,11 @@ public class NCalcLexer : Lexer {
     		{
             int _type = STRING;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:258:6: ( '\\'' ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\'' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:258:10: '\\'' ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\''
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:258:6: ( '\\'' ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\'' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:258:10: '\\'' ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\''
             {
             	Match('\''); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:258:15: ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:258:15: ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )*
             	do 
             	{
             	    int alt8 = 3;
@@ -1134,17 +1137,17 @@ public class NCalcLexer : Lexer {
             	    switch (alt8) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:258:17: EscapeSequence
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:258:17: EscapeSequence
             			    {
             			    	mEscapeSequence(); 
 
             			    }
             			    break;
             			case 2 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:258:34: ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:258:34: ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
             			    {
-            			    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:258:34: ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
-            			    	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:258:61: ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' )
+            			    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:258:34: ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
+            			    	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:258:61: ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' )
             			    	{
             			    		if ( (input.LA(1) >= ' ' && input.LA(1) <= '&') || (input.LA(1) >= '(' && input.LA(1) <= '[') || (input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) 
             			    		{
@@ -1192,14 +1195,14 @@ public class NCalcLexer : Lexer {
     		{
             int _type = DATETIME;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:262:3: ( '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:262:5: '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:262:3: ( '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:262:5: '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#'
             {
             	Match('#'); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:262:9: ( options {greedy=false; } : (~ ( '#' ) )* )
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:262:36: (~ ( '#' ) )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:262:9: ( options {greedy=false; } : (~ ( '#' ) )* )
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:262:36: (~ ( '#' ) )*
             	{
-            		// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:262:36: (~ ( '#' ) )*
+            		// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:262:36: (~ ( '#' ) )*
             		do 
             		{
             		    int alt9 = 2;
@@ -1214,7 +1217,7 @@ public class NCalcLexer : Lexer {
             		    switch (alt9) 
             			{
             				case 1 :
-            				    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:262:36: ~ ( '#' )
+            				    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:262:36: ~ ( '#' )
             				    {
             				    	if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\"') || (input.LA(1) >= '$' && input.LA(1) <= '\uFFFF') ) 
             				    	{
@@ -1262,14 +1265,14 @@ public class NCalcLexer : Lexer {
     		{
             int _type = NAME;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:265:6: ( '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:265:8: '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:265:6: ( '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:265:8: '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']'
             {
             	Match('['); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:265:12: ( options {greedy=false; } : (~ ( ']' ) )* )
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:265:39: (~ ( ']' ) )*
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:265:12: ( options {greedy=false; } : (~ ( ']' ) )* )
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:265:39: (~ ( ']' ) )*
             	{
-            		// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:265:39: (~ ( ']' ) )*
+            		// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:265:39: (~ ( ']' ) )*
             		do 
             		{
             		    int alt10 = 2;
@@ -1284,7 +1287,7 @@ public class NCalcLexer : Lexer {
             		    switch (alt10) 
             			{
             				case 1 :
-            				    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:265:39: ~ ( ']' )
+            				    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:265:39: ~ ( ']' )
             				    {
             				    	if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\\') || (input.LA(1) >= '^' && input.LA(1) <= '\uFFFF') ) 
             				    	{
@@ -1332,8 +1335,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = E;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:268:3: ( ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+ )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:268:5: ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:268:3: ( ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+ )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:268:5: ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+
             {
             	if ( input.LA(1) == 'E' || input.LA(1) == 'e' ) 
             	{
@@ -1346,7 +1349,7 @@ public class NCalcLexer : Lexer {
             	    Recover(mse);
             	    throw mse;}
 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:268:15: ( '+' | '-' )?
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:268:15: ( '+' | '-' )?
             	int alt11 = 2;
             	int LA11_0 = input.LA(1);
 
@@ -1357,7 +1360,7 @@ public class NCalcLexer : Lexer {
             	switch (alt11) 
             	{
             	    case 1 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:
             	        {
             	        	if ( input.LA(1) == '+' || input.LA(1) == '-' ) 
             	        	{
@@ -1376,7 +1379,7 @@ public class NCalcLexer : Lexer {
 
             	}
 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:268:26: ( DIGIT )+
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:268:26: ( DIGIT )+
             	int cnt12 = 0;
             	do 
             	{
@@ -1392,7 +1395,7 @@ public class NCalcLexer : Lexer {
             	    switch (alt12) 
             		{
             			case 1 :
-            			    // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:268:26: DIGIT
+            			    // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:268:26: DIGIT
             			    {
             			    	mDIGIT(); 
 
@@ -1428,8 +1431,8 @@ public class NCalcLexer : Lexer {
     {
     		try
     		{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:272:2: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:272:2: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:
             {
             	if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z') || input.LA(1) == '_' || (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) 
             	{
@@ -1457,8 +1460,8 @@ public class NCalcLexer : Lexer {
     {
     		try
     		{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:278:2: ( '0' .. '9' )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:278:4: '0' .. '9'
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:278:2: ( '0' .. '9' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:278:4: '0' .. '9'
             {
             	MatchRange('0','9'); 
 
@@ -1476,11 +1479,11 @@ public class NCalcLexer : Lexer {
     {
     		try
     		{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:282:2: ( '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape ) )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:282:4: '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:282:2: ( '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape ) )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:282:4: '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
             {
             	Match('\\'); 
-            	// C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:283:4: ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
+            	// C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:283:4: ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
             	int alt13 = 6;
             	switch ( input.LA(1) ) 
             	{
@@ -1524,42 +1527,42 @@ public class NCalcLexer : Lexer {
             	switch (alt13) 
             	{
             	    case 1 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:284:5: 'n'
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:284:5: 'n'
             	        {
             	        	Match('n'); 
 
             	        }
             	        break;
             	    case 2 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:285:4: 'r'
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:285:4: 'r'
             	        {
             	        	Match('r'); 
 
             	        }
             	        break;
             	    case 3 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:286:4: 't'
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:286:4: 't'
             	        {
             	        	Match('t'); 
 
             	        }
             	        break;
             	    case 4 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:287:4: '\\''
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:287:4: '\\''
             	        {
             	        	Match('\''); 
 
             	        }
             	        break;
             	    case 5 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:288:4: '\\\\'
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:288:4: '\\\\'
             	        {
             	        	Match('\\'); 
 
             	        }
             	        break;
             	    case 6 :
-            	        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:289:4: UnicodeEscape
+            	        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:289:4: UnicodeEscape
             	        {
             	        	mUnicodeEscape(); 
 
@@ -1583,8 +1586,8 @@ public class NCalcLexer : Lexer {
     {
     		try
     		{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:294:2: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:294:5: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:294:2: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:294:5: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             	if ( (input.LA(1) >= '0' && input.LA(1) <= '9') || (input.LA(1) >= 'A' && input.LA(1) <= 'F') || (input.LA(1) >= 'a' && input.LA(1) <= 'f') ) 
             	{
@@ -1612,8 +1615,8 @@ public class NCalcLexer : Lexer {
     {
     		try
     		{
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:298:6: ( 'u' HexDigit HexDigit HexDigit HexDigit )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:298:12: 'u' HexDigit HexDigit HexDigit HexDigit
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:298:6: ( 'u' HexDigit HexDigit HexDigit HexDigit )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:298:12: 'u' HexDigit HexDigit HexDigit HexDigit
             {
             	Match('u'); 
             	mHexDigit(); 
@@ -1637,8 +1640,8 @@ public class NCalcLexer : Lexer {
     		{
             int _type = WS;
     	int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:302:4: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
-            // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:302:7: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:302:4: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
+            // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:302:7: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
             {
             	if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n') || (input.LA(1) >= '\f' && input.LA(1) <= '\r') || input.LA(1) == ' ' ) 
             	{
@@ -1666,286 +1669,286 @@ public class NCalcLexer : Lexer {
 
     override public void mTokens() // throws RecognitionException 
     {
-        // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | TRUE | FALSE | ID | INTEGER | FLOAT | STRING | DATETIME | NAME | E | WS )
+        // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | TRUE | FALSE | ID | INTEGER | FLOAT | STRING | DATETIME | NAME | E | WS )
         int alt14 = 40;
         alt14 = dfa14.Predict(input);
         switch (alt14) 
         {
             case 1 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:10: T__19
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:10: T__19
                 {
                 	mT__19(); 
 
                 }
                 break;
             case 2 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:16: T__20
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:16: T__20
                 {
                 	mT__20(); 
 
                 }
                 break;
             case 3 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:22: T__21
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:22: T__21
                 {
                 	mT__21(); 
 
                 }
                 break;
             case 4 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:28: T__22
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:28: T__22
                 {
                 	mT__22(); 
 
                 }
                 break;
             case 5 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:34: T__23
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:34: T__23
                 {
                 	mT__23(); 
 
                 }
                 break;
             case 6 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:40: T__24
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:40: T__24
                 {
                 	mT__24(); 
 
                 }
                 break;
             case 7 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:46: T__25
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:46: T__25
                 {
                 	mT__25(); 
 
                 }
                 break;
             case 8 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:52: T__26
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:52: T__26
                 {
                 	mT__26(); 
 
                 }
                 break;
             case 9 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:58: T__27
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:58: T__27
                 {
                 	mT__27(); 
 
                 }
                 break;
             case 10 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:64: T__28
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:64: T__28
                 {
                 	mT__28(); 
 
                 }
                 break;
             case 11 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:70: T__29
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:70: T__29
                 {
                 	mT__29(); 
 
                 }
                 break;
             case 12 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:76: T__30
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:76: T__30
                 {
                 	mT__30(); 
 
                 }
                 break;
             case 13 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:82: T__31
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:82: T__31
                 {
                 	mT__31(); 
 
                 }
                 break;
             case 14 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:88: T__32
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:88: T__32
                 {
                 	mT__32(); 
 
                 }
                 break;
             case 15 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:94: T__33
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:94: T__33
                 {
                 	mT__33(); 
 
                 }
                 break;
             case 16 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:100: T__34
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:100: T__34
                 {
                 	mT__34(); 
 
                 }
                 break;
             case 17 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:106: T__35
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:106: T__35
                 {
                 	mT__35(); 
 
                 }
                 break;
             case 18 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:112: T__36
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:112: T__36
                 {
                 	mT__36(); 
 
                 }
                 break;
             case 19 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:118: T__37
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:118: T__37
                 {
                 	mT__37(); 
 
                 }
                 break;
             case 20 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:124: T__38
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:124: T__38
                 {
                 	mT__38(); 
 
                 }
                 break;
             case 21 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:130: T__39
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:130: T__39
                 {
                 	mT__39(); 
 
                 }
                 break;
             case 22 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:136: T__40
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:136: T__40
                 {
                 	mT__40(); 
 
                 }
                 break;
             case 23 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:142: T__41
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:142: T__41
                 {
                 	mT__41(); 
 
                 }
                 break;
             case 24 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:148: T__42
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:148: T__42
                 {
                 	mT__42(); 
 
                 }
                 break;
             case 25 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:154: T__43
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:154: T__43
                 {
                 	mT__43(); 
 
                 }
                 break;
             case 26 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:160: T__44
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:160: T__44
                 {
                 	mT__44(); 
 
                 }
                 break;
             case 27 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:166: T__45
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:166: T__45
                 {
                 	mT__45(); 
 
                 }
                 break;
             case 28 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:172: T__46
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:172: T__46
                 {
                 	mT__46(); 
 
                 }
                 break;
             case 29 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:178: T__47
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:178: T__47
                 {
                 	mT__47(); 
 
                 }
                 break;
             case 30 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:184: T__48
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:184: T__48
                 {
                 	mT__48(); 
 
                 }
                 break;
             case 31 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:190: TRUE
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:190: TRUE
                 {
                 	mTRUE(); 
 
                 }
                 break;
             case 32 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:195: FALSE
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:195: FALSE
                 {
                 	mFALSE(); 
 
                 }
                 break;
             case 33 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:201: ID
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:201: ID
                 {
                 	mID(); 
 
                 }
                 break;
             case 34 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:204: INTEGER
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:204: INTEGER
                 {
                 	mINTEGER(); 
 
                 }
                 break;
             case 35 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:212: FLOAT
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:212: FLOAT
                 {
                 	mFLOAT(); 
 
                 }
                 break;
             case 36 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:218: STRING
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:218: STRING
                 {
                 	mSTRING(); 
 
                 }
                 break;
             case 37 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:225: DATETIME
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:225: DATETIME
                 {
                 	mDATETIME(); 
 
                 }
                 break;
             case 38 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:234: NAME
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:234: NAME
                 {
                 	mNAME(); 
 
                 }
                 break;
             case 39 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:239: E
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:239: E
                 {
                 	mE(); 
 
                 }
                 break;
             case 40 :
-                // C:\\Users\\s.ros\\Documents\\Développement\\NCalc\\Grammar\\NCalc.g:1:241: WS
+                // C:\\Users\\s.ros\\Documents\\Dï¿½veloppement\\NCalc\\Grammar\\NCalc.g:1:241: WS
                 {
                 	mWS(); 
 

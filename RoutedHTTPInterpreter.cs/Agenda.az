@@ -1,0 +1,307 @@
+[DebugEnabled, false]
+<$az
+
+var users = [];
+
+func rand_str(length) {
+
+	var validchars = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+	var num_valid_chars = length(validchars);
+
+	var rando_string = '';
+
+	func rando_iterator(index) {
+		var picked_num = rand(0, num_valid_chars);
+
+		var randChar = validchars(picked_num);
+
+		rando_string += randChar;
+	}
+
+	for(rando_iterator, 1, length, 1, true);
+
+	return rando_string;
+}
+
+func load_users() {
+	users = json_parse(file_read('data/users.json'));
+}
+
+func login(username, password) {
+	var mdfivepass = md5(password);
+
+	var loginValid = false;
+
+	func user_iterator(index) {
+
+		var curr_user = users(index);
+
+		if (curr_user(0) == username) {
+			if (curr_user(1) == mdfivepass) {
+				loginValid = true;
+				return false;
+			}
+		}
+	}
+
+	for(user_iterator, 0, length(users)-1, 1, true);
+
+	//sleep(1000);
+
+	return loginValid;
+}
+
+func get_current_session() {
+	if (cookies_contains('_azsess')) {
+
+		var session_id = cookies('_azsess');
+
+		var found = false;
+
+		var session_arr = [];
+
+		func session_iterator(index) {
+			session_arr = sessions(index);
+
+			if (session_arr(0) == session_id) {
+				found = true;
+				return false;
+			}
+		}
+
+		for(session_iterator, 0, length(sessions)-1, 1, true);
+
+		if (found) {
+			return session_arr;
+		} else {
+			return undefined;
+		}
+
+	} else {
+		return undefined;
+	}
+}
+
+func index_handler(context) {
+
+	if (!cookies_contains('_azsess')) {
+
+		include('signin.html');
+
+	} else {
+		header('Location', '/dash');
+
+		status_code(302);
+	}
+}
+
+func login_handler(context) {
+
+	var loginSuccess = login(get('username'), get('password'));
+
+	if (loginSuccess) {
+
+		var sess_id = rand_str(20);
+
+		header('Set-Cookie', '_azsess=' + sess_id + ';Path=/;expires=Sat, 02 May 2089 23:38:25 GMT');
+
+		var new_sess = [sess_id, get('username')];
+
+		array_append(sessions, new_sess);
+
+		file_write('data/sessions.json', json_stringify(sessions));
+	}
+
+	write(loginSuccess);
+}
+
+func dash_handler(context) {
+
+	var curr_sess = get_current_session();
+
+	if (typeof(curr_sess) == typeof(undefined)) {
+
+		if (cookies_contains('_azsess')) {
+			header('Set-Cookie', '_azsess=deleted;Path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT');
+		}
+
+		header('Location', '/');
+
+		status_code(302);
+	} else {
+		include('dash.html');
+	}
+
+}
+
+func events_handler(context) {
+
+	var curr_sess = get_current_session();
+
+	var uname = curr_sess(1);
+
+	var user_agenda = json_parse(file_read('data/user_agendas/' + uname + '.json'));
+
+	var output_json = '[';
+
+	func event_iterator(index) {
+		var curr_item = user_agenda(index);
+
+		output_json += '{';
+
+
+		func item_iterator(_secondindex) {
+			var cur_indiv_item = curr_item(_secondindex);
+
+			var key = cur_indiv_item(0);
+
+			var value = cur_indiv_item(1);
+
+			if (typeof(value) == typeof('string')) {
+				value = '"' + value + '"';
+			}
+
+			if (typeof(value) == typeof(true)) {
+				value = tolower(value);
+			}
+
+			output_json += '"' + key + '": ' + value;
+
+			if (_secondindex < length(curr_item)-1) {
+				output_json += ',';
+			}
+		}
+
+		for(item_iterator, 0, length(curr_item)-1, 1, true);
+
+
+		output_json += '}';
+
+
+		// final
+
+		if (index < length(user_agenda)-1) {
+				
+			output_json += ',';
+		}
+	}
+
+	
+
+	for(event_iterator, 0, length(user_agenda)-1, 1, true);
+
+	output_json += ']';
+
+	write(output_json);
+}
+
+func addevent_handler(context) {
+
+	var curr_sess = get_current_session();
+
+	var uname = curr_sess(1);
+
+	var user_agenda = json_parse(file_read('data/user_agendas/' + uname + '.json'));
+
+	var new_event = [];
+
+	var id_element = ['id', get('id')];
+	var title_element = ['title', get('title')];
+	var start_element = ['start', get('start')];
+	var complete_element = ['iscompleted', false];
+	var end_element = ['end', get('end')];
+
+	array_append(new_event, id_element);
+	array_append(new_event, title_element);
+	array_append(new_event, start_element);
+	array_append(new_event, complete_element);
+	array_append(new_event, end_element);
+
+	array_append(user_agenda, new_event);
+
+	var file = 'data/user_agendas/' + uname + '.json';
+
+	file_write(file, json_stringify(user_agenda));
+
+	write(true);
+
+}
+
+func markeventcomplete_handler(context) {
+
+	var curr_sess = get_current_session();
+
+	var uname = curr_sess(1);
+
+	var user_agenda = json_parse(file_read('data/user_agendas/' + uname + '.json'));
+	
+	var event_id = get('id');
+
+	var event_found = false;
+	var event_found_index = 0;
+
+	func events_iterator(index) {
+		var curr_event = user_agenda(index);
+
+		var curr_event_id = curr_event(0);
+		curr_event_id = curr_event_id(1);
+
+		if (curr_event_id == event_id) {
+
+			event_found_index = index;
+			event_found = true;
+
+			return false;
+		}
+	}
+
+	for(events_iterator, 0, length(user_agenda)-1, 1, true);
+
+	if (event_found) {
+
+		var ev = user_agenda(event_found_index);
+
+		var ev_comp = ev(3);
+
+		ev_comp(1) = true;
+
+		var file = 'data/user_agendas/' + uname + '.json';
+
+		file_write(file, json_stringify(user_agenda));
+
+		write(true);
+
+	} else {
+		write(false);
+	}
+
+}
+
+var sessions = [];
+
+func load_sessions() {
+	sessions = json_parse(file_read('data/sessions.json'));
+}
+
+load_sessions();
+load_users();
+
+httproute_get('/', index_handler);
+
+httproute_get('/api/login', login_handler);
+
+httproute_get('/api/addevent', addevent_handler);
+
+httproute_get('/api/markEventComplete', markeventcomplete_handler);
+
+httproute_get('/dash', dash_handler);
+
+httproute_get('/events', events_handler);
+
+httproute_get('/res', 'res/');
+httproute_get('/data', 'data/');
+
+//httproute_get('/nuclear_haven', 'C:\\Users\\Kevin\\Desktop\\nuclear_haven');
+
+az$>

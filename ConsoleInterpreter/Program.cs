@@ -11,13 +11,13 @@ namespace ConsoleInterpreter
     {
         static void Main(string[] args)
         {
-            AzLang.AzBaseInterpreter Interpreter = new AzLang.AzBaseInterpreter()
+            AzLang.AzBaseInterpreter Interpreter = new AzLang.AzBaseInterpreter(null)
             {
                 HandleDebugMsg = (string msg) =>
                 {
                     Console.WriteLine("[DEBUG] " + msg);
                 },
-                HandleDoneExecuting =>
+                HandleDoneExecuting = () =>
                 {
 
                 },
@@ -43,7 +43,7 @@ namespace ConsoleInterpreter
 
             string file = "testScript.az";
 
-            Interpreter.Interpret(File.ReadAllText(file), false, file);
+            Interpreter.Interpret(File.ReadAllText(file), false, true, file);
 
             Console.WriteLine(">> Press any key to exit.");
 

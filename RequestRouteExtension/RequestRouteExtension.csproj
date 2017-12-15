@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AzLang\AzLang.csproj">
+      <Project>{17cd15ff-f064-4587-926e-9215b7903e4a}</Project>
+      <Name>AzLang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RoutedHTTPInterpreter.cs\RoutedHTTPInterpreter.cs.csproj">
+      <Project>{17cd15ff-f064-4587-926e-9215b7903e4a}</Project>
+      <Name>AzLang</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

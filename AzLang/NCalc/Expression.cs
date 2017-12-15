@@ -204,7 +204,6 @@ namespace NCalc
             if (HasErrors())
             {
                 throw new EvaluationException(Error);
-                return null;
             }
 
             if (ParsedExpression == null)
@@ -247,7 +246,6 @@ namespace NCalc
                         else if (localsize != size)
                         {
                             throw new EvaluationException("When IterateParameters option is used, IEnumerable parameters must have the same number of items");
-                            return null;
                         }
                     }
                 }

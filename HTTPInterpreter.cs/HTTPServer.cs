@@ -71,7 +71,7 @@ namespace HTTPInterpreter
                         handlePOSTRequest();
                     }
                 }
-                catch (Exception e)
+                catch
                 {
                     //Console.WriteLine("Exception: " + e.ToString());
                     writeFailure();
@@ -240,13 +240,13 @@ namespace HTTPInterpreter
         {
             AzLang.AzBaseInterpreter Interpreter = null;
 
-            Interpreter = new AzLang.AzBaseInterpreter()
+            Interpreter = new AzLang.AzBaseInterpreter(null)
             {
                 HandleDebugMsg = (string msg) =>
                 {
                     Console.WriteLine("[DEBUG] " + msg);
                 },
-                HandleDoneExecuting =>
+                HandleDoneExecuting = () =>
                 {
 
                 },
@@ -271,24 +271,24 @@ namespace HTTPInterpreter
 
             p.writeSuccess();
 
-            Interpreter.NonStockMethods.Add("flush", (NCalc.FunctionArgs args) =>
+            Interpreter.NonStockMethods.Add("flush", (sender, args) =>
             {
                 p.outputStream.Flush();
             });
 
-            Interpreter.NonStockMethods.Add("web_get_client_ip", (NCalc.FunctionArgs args) =>
+            Interpreter.NonStockMethods.Add("web_get_client_ip", (sender, args) =>
             {
                 args.HasResult = true;
                 args.Result = ((IPEndPoint)p.socket.Client.RemoteEndPoint).Address.ToString();
             });
 
-            Interpreter.NonStockMethods.Add("web_get_client_port", (NCalc.FunctionArgs args) =>
+            Interpreter.NonStockMethods.Add("web_get_client_port", (sender, args) =>
             {
                 args.HasResult = true;
                 args.Result = ((IPEndPoint)p.socket.Client.RemoteEndPoint).Port.ToString();
             });
 
-            Interpreter.Interpret(File.ReadAllText("testScript.az"), false, "testScript.az");
+            Interpreter.Interpret(File.ReadAllText("testScript.az"), false, true, "testScript.az");
 
             /*var test = @"
 

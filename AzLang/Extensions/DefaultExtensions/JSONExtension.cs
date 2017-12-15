@@ -31,6 +31,11 @@ namespace AzLang.Extensions.DefaultExtensions
 
         }
 
+        public void SetOwner(object owner)
+        {
+            
+        }
+
         void json_parse(LanguageInterpreter sender, FunctionArgs args)
         {
             if (EUtils.CheckArgs(1, args))
