@@ -30,7 +30,7 @@ func load_users() {
 
 func login(username, password) {
 	var mdfivepass = md5(password);
-
+	
 	var loginValid = false;
 
 	func user_iterator(index) {
